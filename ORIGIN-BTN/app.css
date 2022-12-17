@@ -1,4 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400;800|Poppins:900);
+@font-face {
+  font-family: AmaticSC-Bold;
+  src: url(/fonts/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: Cinzel;
+  src: url(/fonts/Cinzel-Bold.ttf);
+}
 html {
   padding-top: 50px;
   font-family: "Open Sans", Helvetica, arial, sans-serif;
@@ -12,9 +20,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+#p-font {
+  font-family: Cinzel, sans-serif;
+  font-size: 2rem;
+}
 h1 {
-  font-family: "Poppins", "Open Sans", sans-serif;
+  font-family: Cinzel, sans-serif;
   margin: 0;
   line-height: 1;
   font-weight: 900;
@@ -260,6 +271,8 @@ button {
   overflow: visible;
   text-transform: uppercase;
   margin-left: 25px;
+  font-family: Cinzel, sans-serif;
+  font-size: 0.948rem;
 }
 .btn-24-L:before,
 .btn-24-L:after {
@@ -307,6 +320,8 @@ button {
 .btn-24-L:hover {
   --tilt: 40px;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #6bddc4;
 }
 
 .btn-24 {
@@ -320,6 +335,8 @@ button {
   overflow: visible;
   text-transform: uppercase;
   margin-left: 24px;
+  font-family: Cinzel;
+  font-size: 0.948rem;
 }
 .btn-24:before,
 .btn-24:after {
@@ -362,6 +379,8 @@ button {
 .btn-24:hover {
   --tilt: 40px;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #6bddc4;
 }
 
 .btn-86 {
