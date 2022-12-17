@@ -1,4 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400;800|Poppins:900);
+@font-face {
+  font-family: AmaticSC-Bold;
+  src: url(/fonts/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: Cinzel;
+  src: url(/fonts/Cinzel-Bold.ttf);
+}
 html {
   padding-top: 50px;
   font-family: "Open Sans", Helvetica, arial, sans-serif;
@@ -12,9 +20,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+#p-font {
+  font-family: Cinzel, sans-serif;
+  font-size: 2rem;
+}
 h1 {
-  font-family: "Poppins", "Open Sans", sans-serif;
+  font-family: Cinzel, sans-serif;
   margin: 0;
   line-height: 1;
   font-weight: 900;
@@ -38,6 +49,7 @@ a:hover {
   grid-template-columns: 250px 250px;
   column-gap: 20px;
   row-gap: 10px;
+  margin-top: 10px;
 }
 
 button {
@@ -252,12 +264,15 @@ button {
   --thickness: 5px;
   display: block;
   box-sizing: border-box;
-  padding: 20px 45px;
+  padding: 1.25rem 2.813rem;
   color: white;
   background: none;
   position: relative;
   overflow: visible;
   text-transform: uppercase;
+  margin-left: 25px;
+  font-family: Cinzel, sans-serif;
+  font-size: 0.948rem;
 }
 .btn-24-L:before,
 .btn-24-L:after {
@@ -268,7 +283,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(194, 27, 27);
+  background: #6bddc4;
   clip-path: polygon(
     0 0,
     calc(100% - var(--tilt)) 0,
@@ -304,6 +319,9 @@ button {
 }
 .btn-24-L:hover {
   --tilt: 40px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #6bddc4;
 }
 
 .btn-24 {
@@ -316,6 +334,9 @@ button {
   position: relative;
   overflow: visible;
   text-transform: uppercase;
+  margin-left: 24px;
+  font-family: Cinzel;
+  font-size: 0.948rem;
 }
 .btn-24:before,
 .btn-24:after {
@@ -326,7 +347,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  background: white;
+  background: #6bddc4;
   clip-path: polygon(
     0 0,
     calc(100% - var(--tilt)) 0,
@@ -357,6 +378,9 @@ button {
 }
 .btn-24:hover {
   --tilt: 40px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #6bddc4;
 }
 
 .btn-86 {
@@ -642,3 +666,89 @@ button {
 }
 
 /*# sourceMappingURL=app.css.map */
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 6em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #6bddc4;
+}
+
+.content h2:nth-child(2) {
+  color: #6bddc4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.container2 {
+  margin: 20px 20px 20px 20px;
+}
+
+.container3 {
+  margin: 90px 90px 90px 90px;
+}
+
+.animate-character {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    /* #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100% */ #9dbcd4 0%,
+    #c3fbf4 29%,
+    #5684ae 67%,
+    #383086 88%,
+    #7291f9 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 4rem;
+}
