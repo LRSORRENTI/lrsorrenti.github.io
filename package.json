@@ -1,0 +1,23 @@
+{
+  "name": "netlify-site",
+  "version": "1.0.0",
+  "description": "SASS FOR NETLIFY SITE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LRSORRENTI/NETLIFY-SITE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LRSORRENTI/NETLIFY-SITE/issues"
+  },
+  "homepage": "https://github.com/LRSORRENTI/NETLIFY-SITE#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
