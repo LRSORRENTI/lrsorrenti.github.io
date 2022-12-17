@@ -38,6 +38,7 @@ a:hover {
   grid-template-columns: 250px 250px;
   column-gap: 20px;
   row-gap: 10px;
+  margin-top: 10px;
 }
 
 button {
@@ -252,12 +253,13 @@ button {
   --thickness: 5px;
   display: block;
   box-sizing: border-box;
-  padding: 20px 45px;
+  padding: 1.25rem 2.813rem;
   color: white;
   background: none;
   position: relative;
   overflow: visible;
   text-transform: uppercase;
+  margin-left: 25px;
 }
 .btn-24-L:before,
 .btn-24-L:after {
@@ -304,6 +306,7 @@ button {
 }
 .btn-24-L:hover {
   --tilt: 40px;
+  cursor: pointer;
 }
 
 .btn-24 {
@@ -316,6 +319,7 @@ button {
   position: relative;
   overflow: visible;
   text-transform: uppercase;
+  margin-left: 24px;
 }
 .btn-24:before,
 .btn-24:after {
@@ -357,6 +361,7 @@ button {
 }
 .btn-24:hover {
   --tilt: 40px;
+  cursor: pointer;
 }
 
 .btn-86 {
