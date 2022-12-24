@@ -262,9 +262,12 @@ button {
 }
 .btn-24-L {
   --thickness: 5px;
-  display: block;
+  /* display: block;
   box-sizing: border-box;
-  padding: 1.25rem 2.813rem;
+  padding: 20px; */
+  display: flex;
+  flex: 0 0 1;
+  padding: 40px;
   color: white;
   background: none;
   position: relative;
@@ -325,7 +328,7 @@ button {
 }
 
 .btn-24 {
-  --thickness: 5px;
+  /* --thickness: 5px;
   display: block;
   box-sizing: border-box;
   padding: 20px 45px;
@@ -336,6 +339,21 @@ button {
   text-transform: uppercase;
   margin-left: 24px;
   font-family: Cinzel;
+  font-size: 0.948rem; */
+  --thickness: 5px;
+  /* display: block;
+  box-sizing: border-box;
+  padding: 20px; */
+  display: flex;
+  flex: 0 0 1;
+  padding: 40px;
+  color: white;
+  background: none;
+  position: relative;
+  overflow: visible;
+  text-transform: uppercase;
+  margin-left: 25px;
+  font-family: Cinzel, sans-serif;
   font-size: 0.948rem;
 }
 .btn-24:before,
